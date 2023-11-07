@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
-export default Screen2 = () => {
+export default Screen2 = (props) => {
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
   const [selectDate, setSelectedDate] = useState("Select a date");
 
@@ -34,6 +34,7 @@ export default Screen2 = () => {
     hideDatePicker();
   };
   return (
+    <ScrollView>
     <View>
       <LinearGradient
         colors={["black", "#8020FF", "black"]}
@@ -60,10 +61,10 @@ export default Screen2 = () => {
               source={require("./img/search.png")}
             ></Image>
             <TextInput
-              placeholder="Search for party by name,type or venue"
+              placeholder="Search for party by name, type or venue"
               style={{ color: "grey", padding: 9 }}
             >
-              <Text>Search for party by name, type or venue</Text>
+              
             </TextInput>
           </View>
           <DateTimePickerModal
@@ -429,11 +430,13 @@ export default Screen2 = () => {
               marginRight:10,
             }}
           >
+            <TouchableOpacity  onPress={()=>props.navigation.navigate("Screen3")}>
             <Image
               style={{ width: 17, height: 17 }}
               source={require("./img/filter.png")}
             ></Image>
             <Text style={{ color: "#fff", marginLeft: 10 ,fontSize:11}}>FILTER</Text>
+            </TouchableOpacity>
           </View>
           <View
             style={{
@@ -535,5 +538,6 @@ export default Screen2 = () => {
            
       {/* </LinearGradient> */}
     </View>
+    </ScrollView>
   );
 };
