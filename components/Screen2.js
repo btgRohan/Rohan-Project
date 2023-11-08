@@ -23,7 +23,7 @@ import { Dimensions } from "react-native";
 function Screen2(props) {
   const { isOpen, onOpen, onClose } = useDisclose();
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-  const [selectDate, setSelectedDate] = useState("Select a Date");
+  const [selectDate, setSelectedDate] = useState("Select a date");
 
   const showDatePicker = () => {
     setDatePickerVisibility(true);
@@ -78,7 +78,7 @@ function Screen2(props) {
                   source={require("./img/search.png")}
                 ></Image>
                 <TextInput
-                  placeholder="Search for party by name,type or venue"
+                  placeholder="Search for party by name, type or venue"
                   style={{ color: "grey", padding: 9 }}
                   placeholderTextColor={"grey"}
                 ></TextInput>
