@@ -630,12 +630,12 @@ function Screen2(props) {
                 <ScrollView style={{width:'100%'}}>
                 <Actionsheet.Item style={{ backgroundColor: "#191717"}}>
                 <Text style={{ color: "#fff"}}>
-                    Event
+                    Events
                   </Text>
                 </Actionsheet.Item>
                 <Actionsheet.Item style={{ backgroundColor: "#191717" }}>
                 <Text style={{ color: "#fff"}}>
-                    Session
+                    Sessions
                   </Text>
                 </Actionsheet.Item>
                 <Actionsheet.Item style={{ backgroundColor: "#191717" }}>
@@ -661,7 +661,7 @@ function Screen2(props) {
 
                  <Actionsheet.Item style={{ backgroundColor: "#191717" }}>
                 <Text style={{ color: "#fff", backgroundColor: "#191717" }}>
-                    Edit
+                    Edits
                   </Text>
                 </Actionsheet.Item>
                 <Actionsheet.Item style={{ backgroundColor: "#191717" }}>
@@ -682,11 +682,6 @@ function Screen2(props) {
                 <Actionsheet.Item style={{ backgroundColor: "#191717" }}>
                 <Text style={{ color: "#fff" }}>
                     Get Info
-                  </Text>
-                </Actionsheet.Item>
-                <Actionsheet.Item style={{ backgroundColor: "#191717" }}>
-                <Text style={{ color: "#fff" }}>
-                    Options
                   </Text>
                 </Actionsheet.Item>
                 </ScrollView>
